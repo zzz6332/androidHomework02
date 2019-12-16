@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.androidhomework.MainActivity;
+import com.example.androidhomework.R;
 import com.example.androidhomework.fragment.FIfthFragment;
 import com.example.androidhomework.fragment.FirstFragment;
 import com.example.androidhomework.fragment.FourthFragment;
@@ -30,15 +31,15 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
-            Fragment fragment1 = new FirstFragment();
+            Fragment fragment1 = FirstFragment.getInstance(R.drawable.first_fragment, "这是第一个fragment");
             return fragment1;
         }
         else if(position == 1){
-            Fragment fragment2 = new SecondFragment();
+            Fragment fragment2 = FirstFragment.getInstance(R.drawable.second_fragment, "fasfa");
             return  fragment2;
         }
         else if (position == 2){
-            Fragment fragment3 = new ThirdFragment();
+            Fragment fragment3 = FirstFragment.getInstance(R.drawable.third_frament,"" + 699);
             return fragment3;
         }
         else if (position == 3){

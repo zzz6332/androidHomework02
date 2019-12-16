@@ -4,12 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.TableLayout;
 import android.widget.Toast;
 
 import com.example.androidhomework.viewPager.ViewPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
+
+import okhttp3.OkHttpClient;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,8 +38,9 @@ public class MainActivity extends AppCompatActivity {
             public void onTabReselected(TabLayout.Tab tab) {
             }
         });
-        ViewPager viewPager = (ViewPager)findViewById(R.id.vp);
+           ViewPager viewPager = (ViewPager)findViewById(R.id.vp);
            viewPager.setAdapter(new ViewPagerAdapter(getSupportFragmentManager()));
-           tabLayout.setupWithViewPager(viewPager);    //---------------与viewPager共用
+           tabLayout.setupWithViewPager(viewPager);    //---------------与viewPager共
+
     }
 }

@@ -15,16 +15,15 @@ android:orientation="vertical">
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:textSize="20dp"
-        android:src="@drawable/first_fragment"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/tv_first_Fragment"
+        android:layout_width="0dp"
+        android:layout_height="17dp"
         android:layout_gravity="center"
         android:layout_marginTop="12dp"
-        android:text="俺是第一个Fragment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintStart_toStartOf="parent"
